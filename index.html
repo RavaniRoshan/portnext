@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roshan | Product Engineer</title>
+    <meta name="description" content="Building systems that matter." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Satoshi', 'sans-serif'],
+            },
+            colors: {
+              // Custom semantic color system
+              background: {
+                light: '#FAFAFA', // Warm near-white
+                dark: '#111111',  // Warm near-black (Charcoal)
+              },
+              surface: {
+                light: '#FFFFFF',
+                dark: '#1A1A1A',
+              },
+              text: {
+                primary: {
+                  light: '#171717', // Near black
+                  dark: '#EDEDED', // Off-white
+                },
+                secondary: {
+                  light: '#525252',
+                  dark: '#A3A3A3',
+                },
+                muted: {
+                  light: '#A3A3A3',
+                  dark: '#525252',
+                }
+              },
+              accent: {
+                light: '#4F46E5', // Indigo-600 tailored
+                dark: '#818CF8', // Indigo-400 tailored for dark mode
+              }
+            },
+            letterSpacing: {
+              tightest: '-0.02em',
+              tighter: '-0.01em',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Smooth scrolling reset */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Custom selection color */
+      ::selection {
+        background-color: rgba(79, 70, 229, 0.2);
+        color: inherit;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "framer-motion": "https://esm.sh/framer-motion@^12.28.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body class="antialiased text-text-primary-light bg-background-light dark:bg-background-dark dark:text-text-primary-dark transition-colors duration-300 selection:bg-accent-light/20 dark:selection:bg-accent-dark/20">
+    <div id="root"></div>
+  </body>
+</html>
