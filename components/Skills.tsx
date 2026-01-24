@@ -4,16 +4,16 @@ import { SkillGroup } from '../types';
 
 const skillGroups: SkillGroup[] = [
   {
-    category: 'Engineering',
-    items: ['React Ecosystem', 'TypeScript', 'Node.js', 'PostgreSQL', 'System Architecture', 'WebGL']
+    category: 'Languages',
+    items: ['Python (Research & Prod)', 'TypeScript / Node.js', 'Rust (Systems)', 'C++', 'SQL']
   },
   {
-    category: 'Product',
-    items: ['Technical Strategy', 'Design Systems', 'Performance Audit', 'Accessibility', 'Analytics']
+    category: 'AI & Systems',
+    items: ['LLM Orchestration', 'RAG Pipelines', 'Multi-Agent Systems', 'LangGraph', 'Computer Vision', 'Gemini API']
   },
   {
-    category: 'Tools',
-    items: ['Figma', 'Linear', 'Vercel', 'AWS', 'Docker', 'Motion']
+    category: 'Stack & Cloud',
+    items: ['FastAPI', 'React / Next.js', 'PostgreSQL', 'Docker', 'AWS / GCP', 'Vector Databases']
   }
 ];
 

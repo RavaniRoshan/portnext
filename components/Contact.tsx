@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin, MessageSquare } from 'lucide-react';
 import { Theme } from '../types';
 
 interface ContactProps {
@@ -25,11 +25,11 @@ export const Contact: React.FC<ContactProps> = ({ theme }) => {
               Let's build something meaningful.
             </h2>
             <p className="text-xl text-text-secondary-light dark:text-text-secondary-dark font-light mb-10">
-              Currently open to new opportunities and interesting collaborations.
+              Always open to discussing AI systems, research collaborations, or new engineering roles.
             </p>
             
             <motion.a 
-              href="mailto:hello@roshan.dev" 
+              href="mailto:ravaniroshansingh@gmail.com" 
               variants={{
                 initial: { scale: 1, boxShadow: "inset 0 0 0px 0px rgba(0,0,0,0)" },
                 hover: {
@@ -62,13 +62,14 @@ export const Contact: React.FC<ContactProps> = ({ theme }) => {
 
           <div className="flex justify-center gap-8 pt-12">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Twitter, href: "#", label: "Twitter" }
+              { icon: Github, href: "https://github.com/RavaniRoshan", label: "GitHub" },
+              { icon: Linkedin, href: "https://linkedin.com/in/roshan-ravani-3a79882a3", label: "LinkedIn" },
             ].map((social) => (
               <motion.a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noreferrer"
                 aria-label={social.label}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}

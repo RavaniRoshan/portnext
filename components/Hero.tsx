@@ -11,9 +11,8 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <h1 className="font-display font-medium text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.1] text-text-primary-light dark:text-text-primary-dark">
-            Building digital <br />
-            systems with <br />
-            <span className="text-text-secondary-light dark:text-text-muted-dark">clarity & intent.</span>
+            AI Engineer & <br />
+            Full-Stack Developer
           </h1>
         </motion.div>
 
@@ -21,10 +20,11 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-md"
+          className="max-w-xl"
         >
           <p className="text-lg md:text-xl text-text-secondary-light dark:text-text-secondary-dark leading-relaxed font-light">
-            I’m Roshan. A senior product engineer focused on scalable architecture, interface precision, and the space between design and code.
+            I build intelligent systems and large-scale software architectures. 
+            Research-oriented focus on <span className="text-text-primary-light dark:text-text-primary-dark font-normal">agentic AI</span>, <span className="text-text-primary-light dark:text-text-primary-dark font-normal">reasoning models</span>, and <span className="text-text-primary-light dark:text-text-primary-dark font-normal">production-grade infrastructure</span>.
           </p>
         </motion.div>
 

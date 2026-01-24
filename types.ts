@@ -1,7 +1,9 @@
+
 export interface Project {
   id: string;
   title: string;
   description: string;
+  features?: string[];
   tags: string[];
   link?: string;
   year: string;
